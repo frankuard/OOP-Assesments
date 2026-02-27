@@ -1,0 +1,26 @@
+package week1;
+
+import java.util.Scanner;
+public class question4 {
+
+	public static void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter Side A:");
+		double a= scanner.nextDouble();
+		
+		System.out.println("Enter Side B:");
+		double b= scanner.nextDouble();
+		
+		System.out.println("Enter Side C:");
+		double c= scanner.nextDouble();
+		
+		double s= (a+b+c)/2;
+		
+		double area= Math.sqrt(s*(s-a)*(s-b)*(s-c));
+		
+		System.out.println("The area of a traingle is:"+ area);
+		
+		scanner.close();
+	}
+}

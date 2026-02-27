@@ -1,0 +1,22 @@
+package week1;
+
+import java.util.Scanner;
+public class question4 {
+
+	public static void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter Side A:");
+		String a= scanner.next();
+		
+		System.out.println("Enter Side B:");
+		String b= scanner.next();
+		
+		System.out.println("Enter Side C:");
+		String c= scanner.next();
+		
+		double s= (a+b+c)/2;
+		
+		
+	}
+}
