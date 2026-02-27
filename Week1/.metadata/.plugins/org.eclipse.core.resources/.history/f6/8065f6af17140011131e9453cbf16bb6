@@ -1,0 +1,10 @@
+package week1;
+
+import java.util.Scanner;
+public class question6 {
+	Scanner scanner= new Scanner(System.in);
+	
+	System.out.println("Enter the length of the square");
+	double num= scanner.nextDouble();
+	
+}

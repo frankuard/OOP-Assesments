@@ -7,7 +7,15 @@ public class question5 {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Enter the length of the rectangle:");
+		double l= scanner.nextDouble();
 		
-			
+		System.out.println("Enter the width of the rectangle:");
+		double w= scanner.nextDouble();
+		
+		double p= 2*(l+w);
+		
+		System.out.println("The perimeter of the rectangle is:"+ p);
+		
+		scanner.close();
 	}
 }
