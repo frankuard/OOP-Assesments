@@ -1,0 +1,13 @@
+package week1;
+
+import java.util.Scanner;
+
+public class question11 {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter the distance in miles:");
+		
+	}
+}
