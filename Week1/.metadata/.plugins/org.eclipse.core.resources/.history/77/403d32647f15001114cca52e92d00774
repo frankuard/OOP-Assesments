@@ -1,0 +1,17 @@
+package week1;
+
+import java.util.Scanner;
+public class question14 {
+	public static void main(String[] args) {
+		Scanner scanner= new Scanner(System.in);
+		
+		System.out.println("Enther the amount of money in US dollar:");
+		double currency= scanner.nextDouble();
+		
+		System.out.println("Enther the exachange rate:");
+		double rate= scanner.nextDouble();
+		
+		System.out.println("The converted amount is:"+(currency*rate));
+		
+	}
+}

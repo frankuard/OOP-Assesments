@@ -1,0 +1,20 @@
+package week1;
+
+
+public class question16 {
+ public static void main(String[] args) {
+	 
+	boolean expr1 = (5>3);
+	boolean expr2 = (8>5);
+	boolean ANDResult = expr1 && expr2;
+	
+	boolean expr3 = (5>3);
+	boolean expr4 = (2>5);
+	boolean ORResult = expr3 || expr4; 
+	
+	boolean NOTResult = !(5==10);
+
+	
+	System.out.println("AND Result:")
+ }
+}

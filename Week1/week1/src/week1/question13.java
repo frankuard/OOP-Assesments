@@ -1,0 +1,21 @@
+package week1;
+
+import java.util.Scanner;
+public class question13 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter the quantity of the product:");
+		double q = scanner.nextDouble();
+		
+		System.out.println("Enter the price of the product:");
+		double p = scanner.nextDouble();
+		
+		double cost= p*q;
+		
+		System.out.println("Total cost of the product is:"+cost);
+		
+		scanner.close();
+	}
+}
