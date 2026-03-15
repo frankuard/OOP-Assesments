@@ -4,23 +4,30 @@ import java.util.Scanner;
 public class question4 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int MinAge = Integer.MAX_VALUE;
-		int MinAge = Integer.MIN_VALUE;
-		int age;
+		int Largest = Integer.MIN_VALUE;
+		int Smallest = Integer.MAX_VALUE;
 		
 		
-		System.out.println("Enter the first person age:");
-		double person1 = scanner.nextDouble();
+		System.out.println("How many user you wanna enter?");
+		int User = scanner.nextInt();
 		
-		System.out.println("Enter the second person age:");
-		double person2 = scanner.nextDouble();
-		
-		System.out.println("Enter the third person age:");
-		double person3 = scanner.nextDouble();
-		
-		if (person1>person2 && person1>person3) {
-			System.out.println("The first person is the oldest");
+		for (int i=1;i<=User;i++) {
+			
+			System.out.println("Enter the age of the user "+i+":");
+			int UserAge = scanner.nextInt();
+			
+			if (UserAge> Largest) {
+				Largest = UserAge;
+			}
+			
+			if (UserAge<Smallest) {
+				Smallest = UserAge;
+			}
 		}
+		
+		System.out.println("Largest Age:"+ Largest);
+		System.out.println("Smallest Age:"+ Smallest);
+		
 		
 		scanner.close();
 	}
