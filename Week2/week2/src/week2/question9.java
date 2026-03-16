@@ -14,5 +14,7 @@ public class question9 {
 			}
 		}
 	System.out.println(total);
+	
+	scanner.close();	
 	}
 }
