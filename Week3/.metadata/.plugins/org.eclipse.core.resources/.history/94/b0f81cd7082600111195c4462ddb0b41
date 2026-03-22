@@ -1,0 +1,36 @@
+package week3;
+
+public class question3 {
+	 public static void main(String[] args) {
+		 
+	 }
+}
+
+class BankAccount{
+	int accountNumber;
+	double balance;
+	String accountHolderName;
+	String accountHolderAddress;
+	
+	void printInfo() {
+		System.out.println("Account Number: "+ accountNumber);
+		System.out.println("Balance: "+balance);
+		System.out.println("Account Holder's Name: "+accountHolderName);
+		System.out.println("Account Holder's Address: "+ accountHolderAddress);
+	}
+	
+	
+	void depositMoney(double n) {
+		 balance += n;
+		System.out.println("Deposited: "+n);
+		System.out.println("New Balance: "+balance);
+	}
+	
+	void withdrawMoney(double n) {
+		balance -= n;
+		System.out.println("Withdrawn: "+n);
+		System.out.println("New Balance: "+balance);
+	}
+	
+}
+}

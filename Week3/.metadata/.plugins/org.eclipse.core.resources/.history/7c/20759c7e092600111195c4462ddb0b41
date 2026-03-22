@@ -1,0 +1,14 @@
+package week3;
+
+public class question6 {
+	 public static void main(String[] args) {
+			 
+		 }
+	 
+	 class Lamp{
+		 
+		boolean isOn;
+		
+	 }
+	 }
+}

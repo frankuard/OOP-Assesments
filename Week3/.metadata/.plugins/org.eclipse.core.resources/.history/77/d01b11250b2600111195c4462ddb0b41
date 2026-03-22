@@ -1,0 +1,24 @@
+package week3;
+
+public class question7 {
+	public static void main(String[] args) {
+		
+	}
+}
+
+class question7BankAcc{
+	int accountNumber;
+	double balance;
+	String accountHolderName;
+	String accountHolderAddress;
+	
+	public question7BankAcc(int accountNumber,
+	double balance,
+	String accountHolderName,
+	String accountHolderAddress) {
+		this.accountNumber = accountNumber;
+		this.balance = balance;
+		this.accountHolderName = accountHolderName;
+		this.accountHolderAddress = accountHolderAddress;
+	}
+}
