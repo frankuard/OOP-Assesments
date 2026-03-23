@@ -1,0 +1,24 @@
+package week3;
+
+public class question12 {
+
+	public static void main(String[] args) {
+		Customer customer = new Customer()
+	}
+}
+
+class Customer{
+	
+	private int customerID;
+	private String name;
+	int BankAccount;
+	
+	public Customer(int customerID, String name, int BankAccount) {
+		this.customerID = customerID;
+		this.name = name;
+		this.BankAccount = BankAccount;
+		
+		
+	}
+	
+}

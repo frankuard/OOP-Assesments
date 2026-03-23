@@ -1,0 +1,22 @@
+package week3;
+
+public class question10 {
+
+	public static void main (String[] args) {
+		
+		childOne Bankacc = new childOne();
+		
+		Bankacc.getBalance(12.0);
+	}
+	
+}
+
+class childOne extends BankAccount{
+	
+	private double balance;
+	
+	public double getBalance(){
+		return balance;
+	}
+	
+}

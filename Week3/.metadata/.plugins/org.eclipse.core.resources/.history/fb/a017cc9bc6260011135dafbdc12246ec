@@ -1,0 +1,27 @@
+package week3;
+
+public class question13 {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}
+
+class qono13 extends BankAccount{
+	
+	public qono13(int accountNumber, double balance, 
+			String accountHolderName, 
+			String accountHolderAddress) {
+		
+		this.accountNumber = accountNumber;
+		this.balance = balance;
+		this.accountHolderName = accountHolderName;
+		this.accountHolderAddress = accountHolderAddress;
+		
+		System.out.println("Account Number: "+ accountNumber);
+		System.out.println("Balance: "+balance);
+		System.out.println("Account Holder's Name: "+accountHolderName);
+		System.out.println("Account Holder's Address: "+ accountHolderAddress);
+	}
+}

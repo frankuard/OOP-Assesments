@@ -1,0 +1,31 @@
+package week3;
+
+public class question12 {
+
+	public static void main(String[] args) {
+		Customer customer = new Customer(1, "Roshan", 12345);
+		Customer customer = new Customer(2, "Roshan", 15546);
+		Customer customer = new Customer(3, "Roshan", 1654564);
+	
+	}
+}
+
+class Customer{
+	
+	private int customerID;
+	private String name;
+	int BankAccount;
+	
+	public Customer(int customerID, String name, int BankAccount) {
+		this.customerID = customerID;
+		this.name = name;
+		this.BankAccount = BankAccount;
+		
+		System.out.println("CustomerID: "+ customerID);
+		System.out.println("Name: "+ name);
+		System.out.println("Bank Account: "+ BankAccount);
+		
+	
+	}
+	
+}

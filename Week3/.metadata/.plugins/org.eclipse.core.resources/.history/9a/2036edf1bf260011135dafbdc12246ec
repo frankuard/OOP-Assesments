@@ -1,0 +1,16 @@
+package week3;
+
+public class question11 {
+
+	public static void main(String[] args) {
+		
+		
+	}
+}
+
+class Address{
+	
+	String street;
+	String city;
+	int zipCode;
+}

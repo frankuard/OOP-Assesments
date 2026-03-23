@@ -1,0 +1,52 @@
+package week3;
+
+public class question13 {
+	
+	public static void main(String[] args) {
+		
+		qono13 user1 = new qono13(12334,2000.00,"Roshan", "Biratnagar 1");
+		qono13 user2 = new qono13(12654,5000.00,"Suraj");
+		qono13 user3 = new qono13(12798,8000.00);
+	}
+}
+
+class qono13 extends BankAccount{
+	
+	public qono13(int accountNumber, double balance, 
+			String accountHolderName, 
+			String accountHolderAddress) {
+		
+		this.accountNumber = accountNumber;
+		this.balance = balance;
+		this.accountHolderName = accountHolderName;
+		this.accountHolderAddress = accountHolderAddress;
+		
+		System.out.println("Account Number: "+ accountNumber);
+		System.out.println("Balance: "+balance);
+		System.out.println("Account Holder's Name: "+accountHolderName);
+		System.out.println("Account Holder's Address: "+ accountHolderAddress);
+	}
+	
+	public qono13(int accountNumber, double balance, 
+			String accountHolderName) {
+		
+		this.accountNumber = accountNumber;
+		this.balance = balance;
+		this.accountHolderName = accountHolderName;
+		
+		System.out.println("Account Number: "+ accountNumber);
+		System.out.println("Balance: "+balance);
+		System.out.println("Account Holder's Name: "+accountHolderName);
+	}
+	
+	public qono13(int accountNumber, double balance) {
+		
+		this.accountNumber = accountNumber;
+		this.balance = balance;
+		
+		
+		System.out.println("Account Number: "+ accountNumber);
+		System.out.println("Balance: "+balance);
+		
+	}
+}

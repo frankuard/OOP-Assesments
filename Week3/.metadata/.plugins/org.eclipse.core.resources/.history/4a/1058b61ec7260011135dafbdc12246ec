@@ -1,0 +1,25 @@
+package week3;
+
+public class question13 {
+	
+	public static void main(String[] args) {
+		
+		qono13 user1 = new qono13(12334,2000.00,"Roshan", "Biratnagar 1");
+		qono13 user2 = new qono13(12654,5000.00,"Suraj", "Biratnagar 7");
+		qono13 user3 = new qono13(12798,8000.00,"Aayush", "Biratnagar 3");
+	}
+}
+
+class qono13 extends BankAccount{
+	
+	public qono13(int accountNumber, double balance, 
+			String accountHolderName, 
+			String accountHolderAddress) {
+		
+		this.accountNumber = accountNumber;
+		this.balance = balance;
+		this.accountHolderName = accountHolderName;
+		this.accountHolderAddress = accountHolderAddress;
+	}
+	
+}

@@ -1,0 +1,18 @@
+package week3;
+
+public class question13 {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}
+
+class qono13 extends BankAccount{
+	
+	public qono13(int accountNumber, double balance, 
+			String accountHolderName, 
+			String accountHolderAddress) {
+		
+	}
+}
