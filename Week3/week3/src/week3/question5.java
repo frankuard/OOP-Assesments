@@ -3,7 +3,7 @@ package week3;
 public class question5 {
 	 public static void main(String[] args) {
 		 
-		 BankAccount bankacc1= new BankAccount();
+		 childClass bankacc1= new childClass();
 			bankacc1.accountNumber = 20034;
 			bankacc1.balance= 33454.66;
 			bankacc1.accountHolderName = "Roshan";
@@ -13,4 +13,18 @@ public class question5 {
 			bankacc1.withdrawMoney(300.50);
 			
 	 }
+}
+
+class childClass extends BankAccount{
+	void depositMoney(double n) {
+		 balance += n;
+		System.out.println("Deposited: "+n);
+		System.out.println("New Balance: "+balance);
+	}
+	
+	void withdrawMoney(double n) {
+		balance -= n;
+		System.out.println("Withdrawn: "+n);
+		System.out.println("New Balance: "+balance);
+	}
 }

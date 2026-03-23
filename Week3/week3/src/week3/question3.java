@@ -18,19 +18,7 @@ class BankAccount{
 		System.out.println("Account Holder's Name: "+accountHolderName);
 		System.out.println("Account Holder's Address: "+ accountHolderAddress);
 	}
-	
-	// THIS IS FOR THE QUESTION NUMBER 5
-	void depositMoney(double n) {
-		 balance += n;
-		System.out.println("Deposited: "+n);
-		System.out.println("New Balance: "+balance);
-	}
-	
-	void withdrawMoney(double n) {
-		balance -= n;
-		System.out.println("Withdrawn: "+n);
-		System.out.println("New Balance: "+balance);
-	}
+
 	
 }
 

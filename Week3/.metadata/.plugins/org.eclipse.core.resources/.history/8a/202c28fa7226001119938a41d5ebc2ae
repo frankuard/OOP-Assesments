@@ -1,0 +1,31 @@
+package week3;
+
+public class question9 {
+	 public static void main(String[] args) {
+		 	 }
+	 
+}
+
+class Box{
+	double width;
+	double height;
+	double depth;
+	
+	public Box(double width) {
+		double Volume = Math.pow(width, 3);
+	}
+	
+	public Box(double width, double height , double depth) {
+		double Volume = width * height * depth;
+	}
+	
+	pubic Box() {
+		double Volume = 10*8*12;
+	}
+	
+	void getVolume() {
+		
+		System.out.println(Volume);
+	}
+	 }
+

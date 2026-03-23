@@ -3,39 +3,31 @@ package week3;
 public class question7 {
 	public static void main(String[] args) {
 		
-		question7BankAcc user1 = new question7BankAcc(12002,20000.00,"Roshan","Biratnagar 1");
-		question7BankAcc user2 = new question7BankAcc(15689,15000.00,"Suraj","Biratnagar 7");
+		newChild user1 = new newChild(12002,20000.00,"Roshan","Biratnagar 1");
+		newChild user2 = new newChild(15689,15000.00,"Suraj","Biratnagar 7");
 	
 		user1.printInfo();
 		user2.printInfo();
 	}
 }
 
-class question7BankAcc{
+class newChild extends BankAccount{
 	
-	int accountNumber;
-	double balance;
-	String accountHolderName;
-	String accountHolderAddress;
-	
-	//THIS IS FOR THE QUESTION NO 7
-	
-	public question7BankAcc(int accountNumber,
-	double balance,
-	String accountHolderName,
-	String accountHolderAddress) {
+	public newChild(int accountNumber,
+			double balance,
+			String accountHolderName,
+			String accountHolderAddress) {
 		this.accountNumber = accountNumber;
 		this.balance = balance;
 		this.accountHolderName = accountHolderName;
 		this.accountHolderAddress = accountHolderAddress;
-
 	}
+
+
+	
 	
 	//THIS IS FOR THE QUESTION NO 8
 	
-	public question7BankAcc() {
-		System.out.println("User Created");
-	}
 	
 	void printInfo() {
 		System.out.println("Account Number: "+ accountNumber);
