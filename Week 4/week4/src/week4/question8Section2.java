@@ -2,7 +2,7 @@ package week4;
 
 import java.util.Scanner;
 
-public class question8Logic {
+public class question8Section2 {
 
 	public static void main(String[] args) {
 		
