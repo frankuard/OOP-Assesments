@@ -1,10 +1,27 @@
 package week7;
-import java.util.*;
 
-public class classDiagram1 {
+
+public class mainBank {
 
 	public static void main(String[] args) {
 		
+		Account acc1 = new Account("Roshan", "Karki",1,10000);
+		Account acc2 = new Account("Suraj", "Poddar",1,20000);
+		
+		System.out.println("Before Transaction");
+		acc1.displayCustomer();
+		acc1.displayAccount();
+		acc2.displayCustomer();
+		acc2.displayAccount();
+		
+		Transaction t = new Transaction();
+		t.transfer(acc1, acc2, 5000);
+		
+		System.out.println("After Transaction");
+		acc1.displayCustomer();
+		acc1.displayAccount();
+		acc2.displayCustomer();
+		acc2.displayAccount();
 		
 	}
 }
@@ -20,8 +37,8 @@ class Customer{
 		
 	}
 	public void displayCustomer() {
-		System.out.println(firstName);
-		System.out.println(lastName);
+		System.out.print(firstName);
+		System.out.println(" "+lastName);
 		
 	}
 }
@@ -35,7 +52,7 @@ class Account extends Customer{
 	
 	public Account(String firstName, String lastName, int accountNumber, float accountBalance) {
 		
-		super(firstName,lastName);
+		super(firstName, lastName);
 		this.accountNumber = accountNumber;
 		this.accountBalance = accountBalance;
 		
@@ -97,9 +114,15 @@ public void displayAccount() {
 
 
 class Transaction{
-	public void transfer(Account fromAccount, Account toAccount, float accountBalance) {
+	public void transfer(Account fromAccount, Account toAccount, int amount) {
 		
-		if (fromAccount.getBalance()>= ) {
+		if (fromAccount.getBalance() >= amount) {
+			fromAccount.withdraw(amount);
+			toAccount.deposit(amount);
+			System.out.println("Transfer Successfull");
+		}
+		else {
+			System.out.println("Transfer failed! Insufficient Balance");
 			
 		}
 		
@@ -107,5 +130,3 @@ class Transaction{
 	
 	}
 	
-	
-}
