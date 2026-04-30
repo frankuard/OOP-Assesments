@@ -25,7 +25,28 @@ public class number3 {
 	
 	public List<Integer> read(String filePath){
 		
+		List<Integer> numbers = new ArrayList<>();
+		
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(filePath));
+			
+			String line = br.readLine();
+			 if (line!=null) {
+				 
+				 String[] parts = line.trim().split("\\s+");
+				 for (String num: parts) {
+					 numbers.add(Integer.parseInt(num));
+				 }
+			 }
+			 br.close();
+		}
+		catch (IOException e) {
+			System.out.println("There has been an error");
+			e.printStackTrace();
+		}
+		return numbers;
 	}
+	
 	
 	public List<Integer> getEven(List<Integer> numbers) {
 		List<Integer> even = new ArrayList<>();
@@ -65,3 +86,4 @@ public class number3 {
 	}
 	
 }
+
