@@ -19,36 +19,34 @@ public class number5 {
 		System.out.println("Enter the number of students");
 		int num = scanner.nextInt();
 		
-		String firstName = null;
-		String lastName= null;
-		String address= null;
-		String contactNumber = null;
-		String semester = null;
 		
 		for (int i=1;i<=num;i++) {
 			
 			System.out.println("Enter the First Name of the Student:");
-			firstName = scanner.nextLine();
+			String firstName = scanner.nextLine();
 			
 			System.out.println("Enter the Last Name of the Student:");
-			 lastName = scanner.nextLine();
+			String lastName = scanner.nextLine();
 			
 			System.out.println("Enter the Address of the student:");
-			 address = scanner.nextLine();
+			String address = scanner.nextLine();
 			
 			System.out.println("Enter the Contact Number of the Student:");
-			 contactNumber = scanner.nextLine();
+			String contactNumber = scanner.nextLine();
 			
 			System.out.println("Enter the semester of the Student");
-			 semester = scanner.nextLine();
+			String semester = scanner.nextLine();
 			
+			
+			Student student = new Student(firstName, lastName, address, contactNumber, semester);
+
+			writer.write(student.toCSV() + "\n");
+			
+			student.toCSV();
 		}
 		
-		Student student = new Student(firstName, lastName, address, contactNumber, semester);
+				
 		
-		writer.write(student.toCSV() + "\n");
-		
-		student.toCSV();
 		
 		writer.close();
 		scanner.close();

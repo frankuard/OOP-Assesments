@@ -12,7 +12,8 @@ public class number4 {
 		
 		try {
 			BufferedReader br = new BufferedReader(new FileReader("files/one.txt"));
-			
+			 
+					
 			String line;
 			
 			while ((line = br.readLine()) != null) {
